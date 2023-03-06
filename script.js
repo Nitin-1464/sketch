@@ -3,14 +3,15 @@ const NewEL = (sel, prop) => Object.assign(document.createElement(sel), prop);
 const EL_grid = document.querySelector("#grid");
  //Erase
 const EL_clear = document.querySelector("#erase");
-
+// color chaos
 const EL_color = document.querySelector("[name=color]");
-
+ // box size 
 const EL_size = document.querySelector("[name=size]");
-
-let size = parseInt(EL_size.value, 10);
-let color = "black";
-let isPenDown = false;
+// chaos box size
+let size = parseInt(EL_size.input, 10);
+//color choas
+let color = "#ff0000";
+let isPenDown = true;
 
 function makeGrid() {
   EL_grid.innerHTML = ""; 
@@ -20,13 +21,14 @@ function makeGrid() {
     EL_grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     EL_grid.append(NewEL("div", {
       className: "box",
-      onmousedown()  { isPenDown = true; paint(this); },
-      onmouseup()    { isPenDown = false; },
+      onmousedown()  { isPenDown = false; paint(this); },
+      onmouseup()    { isPenDown = true; },
       onmouseenter() { if (isPenDown) paint(this); },
     }));
   }
 };
 
+/*color click */
 function paint(EL) {
   EL.style.backgroundColor = color;  
 }
@@ -56,5 +58,4 @@ EL_size.addEventListener("change", () => {
   makeGrid();
 });
 
-// INIT!
-makeGrid();
+
