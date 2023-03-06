@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-color: black;
+    display: inline;
+    border: 0px solid black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,80px);
+    grid-template-rows: repeat(5,80px);
+    grid-gap: 5px;
+}
+
+/*center the cell content*/
+.cell{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    background-color: white;
+}
+
