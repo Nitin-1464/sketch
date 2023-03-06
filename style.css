@@ -5,6 +5,7 @@
   background: rgb(196, 35, 35);
   display: inline-block;
   border: 5px solid rgb(155, 37, 37);
+  
 }
 
 /*box inline*/
@@ -22,4 +23,5 @@
     margin: 0;
     user-select: none;
     grid-gap: 5px;
+    cursor: wait;
   }
