@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head lang="en">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
        <link rel="stylesheet" href="./style.css"> 
        <title>Sketch</title>
     </head>
     <body>
-        <div class="container">
-            <div class="grid">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-                <input type="text" id="horizontally" class="cell">
-                <input type="text" id="vertically" class="cell">
-            </div>
-        </div>
+        
+            
+            <div>
+                <label>
+                  
+                  <input type="number" name="size" value="16">
+                </label>
+                
+                <label>
+                  
+                  <select name="color">
+                    <option value="black">black</option>
+                    <option value="white">white</option>
+                    <option value="red">red</option>
+                    <option value="yellow">yellow</option>
+                    <option value="orange">orange</option>
+                    <option value="fuchsia">fuchsia</option>
+                    <option value="transparent">CLEAR (transparent)</option>
+                    <option value="random">RANDOM COLOR</option>
+                  </select>
+                </label>
+                
+                <button id="clear">Clear canvas</button>
+              </div>
+              
+              
+              <div id="grid"></div>
+        
         <script src="./script.js"></script>
     </body>
 </html>
