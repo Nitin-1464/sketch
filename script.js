@@ -40,7 +40,9 @@ EL_clear.addEventListener("click", () => {
   color = "transparent";  
    
   // Temporarily set it to transparent
-  EL_grid.querySelectorAll(".box").forEach(paint); // Paint all cells as transparent
+  EL_grid.querySelectorAll(".box").forEach(paint); 
+  
+  // Paint all cells as transparent
   color = tmp_color;      
   
   
