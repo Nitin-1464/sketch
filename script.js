@@ -10,7 +10,7 @@ const EL_size = document.querySelector("[name=size]");
 // chaos box size
 let size = parseInt(EL_size.input, 10);
 //color choas
-let color = "#ff0000";
+let color = "#000000";
 let isPenDown = true;
 
 
