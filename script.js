@@ -4,7 +4,7 @@ const EL_grid = document.querySelector("#grid");
  //Erase
 const EL_clear = document.querySelector("#erase");
 // color chaos
-const EL_color = document.querySelector("[name=color]");
+const EL_color = document.querySelector("#choose");
  // box size 
 const EL_size = document.querySelector("[name=size]");
 // chaos box size
@@ -12,6 +12,7 @@ let size = parseInt(EL_size.input, 10);
 //color choas
 let color = "#ff0000";
 let isPenDown = true;
+
 
 function makeGrid() {
   EL_grid.innerHTML = ""; 
@@ -28,7 +29,7 @@ function makeGrid() {
   }
 };
 
-/*color click */
+//color click 
 function paint(EL) {
   EL.style.backgroundColor = color;  
 }
